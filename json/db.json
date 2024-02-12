@@ -250,19 +250,7 @@
         "h2": "dd",
         "p": "dd"
       },
-      "img": "dd"
-    },
-    {
-      "id": "325b",
-      "category": "News",
-      "title": "dda",
-      "date": "2024-01-29",
-      "moreContent": {
-        "h1": "da",
-        "h2": "dada",
-        "p": "dada"
-      },
-      "img": "da"
+      "img": "./company_images/1000_F_461427622_cIdVKSrc6Poxa8BCOR8mUZs1e02RhqyY.png"
     }
   ]
 }
