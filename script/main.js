@@ -53,7 +53,7 @@ const app = Vue.createApp({
     },    
     methods: {
         search() { // 검색 기능
-            axios.get('./json/db.json') // 실제 API 경로로 변경
+            axios.get('../json/db.json') // 실제 API 경로로 변경
                 .then(response => {
                     if (!this.searchTerm && !this.selectedCategory) {
                         this.contents = response.data.posts;
