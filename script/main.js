@@ -60,7 +60,7 @@ const app = Vue.createApp({
                     }
                     else {
                         // filter는 true인것을 추출
-                        this.contents = response.data.filter(content =>
+                        this.contents = response.data.posts.filter(content =>
                 // a||b a,b둘중하나가 true면 true반환 카테고리하고 검색란이 선택안됐을때 true  
                 // 만약 검색한게 히트한게 없다면 false이므로 필터링결과가 0이되고 noresult가 true
                             (!this.selectedCategory || content.category === this.selectedCategory) &&
