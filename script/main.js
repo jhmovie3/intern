@@ -53,7 +53,7 @@ const app = Vue.createApp({
     },    
     methods: {
         search() { // 검색 기능
-            axios.get('../json/db.json') // 실제 API 경로로 변경
+            axios.get('https://jhmovie3.github.io/topabout.github.io/json/db.json') // 실제 API 경로로 변경
                 .then(response => {
                     if (!this.searchTerm && !this.selectedCategory) {
                         this.contents = response.data.posts;
@@ -103,7 +103,7 @@ const app = Vue.createApp({
             const date = `${year}-${month}-${day}`;
             console.log(this.newPost);
             // 새로운 포스트를 생성
-            axios.post('./json/db.json', { ...this.newPost, date: date }) // 실제 API 경로로 변경
+            axios.post('https://jhmovie3.github.io/topabout.github.io/json/db.json/posts', { ...this.newPost, date: date }) // 실제 API 경로로 변경
                 .then(response => {
                     // 포스트가 성공적으로 생성되면, contents 배열에 추가
                     this.contents.push(response.data);
